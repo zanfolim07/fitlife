@@ -13,7 +13,7 @@
     <nav>
       <a href="../index.html">Fitlife</a>
       <ul>
-        <li><a href="imc.html">IMG</a></li>
+        <li><a href="imc.html">IMC</a></li>
         <li><a href="tmb.html">TBM</a></li>
         <li><a href="water.html">Água</a></li>
       </ul>
@@ -21,13 +21,37 @@
 
     <main>
         <section>
-            <header>
-                <h1>TMB</h1>
-                <p>Em breve você poderá calcular seu TMB aqui</p>
-            </header>
-        </section>
+            <h1>Taxa metabolica basal</h1>
+            <form>
 
-        <a href="../index.html">Voltar</a>
+                <label for="gender">Genero</label>
+                <select id="gender">
+
+                    <option value="male">Masculino</option>
+                    <option value="famale">Feminino</option>
+
+                </select>
+
+                 <label for="wight">Pesos (Kg)</label>
+                <input type="number" id="wight" placeholder="Ex: 75" required>
+
+                <label for="heigth">Altura (Cm)</label>
+                <input type="number" id="heigth" placeholder="Ex: 175" required>
+
+                <label for="age">Idade (Anos)</label>
+                <input type="number" id="age" placeholder="Ex: 25" required>
+
+                <button type="submit">Calcular</button>
+            </form>
+
+            <div>
+                <p>Gasto calorico basal</p>
+                <h2>00000</h2>
+                <p>Kcal/dias</p>
+            </div>
+
+            <a href="../index.html">Voltar</a>
+        </section>
     </main>
     
 </body>
